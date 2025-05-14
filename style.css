@@ -1,3 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial; 
+  font-family: 'Inter', sans-serif;
+  color: #000;
+  background-image: url('https://cdn.prod.website-files.com/602d151a812ce93ee387ebe5/628527e9dbb2dd3ed771b6cb_Cachorro%20latindo.jpg');
+  background-size: cover;  
+  background-attachment: fixed;
+  background-position: center center; 
+}
+
+/* Topbar  */
+.topbar {
+  background: #8A5EFF;
+  color: #fff;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.menu .social {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16rem 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Texto da esquerda */
+.content {
+  max-width: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+/* Botões */
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: #8A5EFF;
+  color: #fff;
+  border: none;
+}
+
+.btn.primary:hover {
+  background: #6d3fd6;
+}
+
+.btn.secondary {
+  background: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+.btn.secondary:hover {
+  border-color: #8A5EFF;
+  color: #8A5EFF;
+}
+
+/* Card "Quem somos" */
+.info-card {
+  display: inline-flex;
+  align-items: center;
+  background: #8A5EFF;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.info-card a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  background: #fff;
+  color: #8A5EFF;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .dog-image {
+    width: 100%;
+    height: 300px;
+    margin-top: 2rem;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

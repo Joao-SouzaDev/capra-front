@@ -2,53 +2,43 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ajude um Animal</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <header>
-    <h1>Você tem amor para dar?</h1>
+  <header class="topbar">
+    <div class="logo">🐾 ACAPRA</div>
+    <nav class="menu">
+      <a href="#">Doações</a>
+      <a href="#">Adoção</a>
+      <a href="#">Quem somos</a>
+      <a href="#">Contato</a>
+      <div class="social">
+        <a href="#"><img src="https://img.icons8.com/ios-filled/20/twitter--v1.png" alt="twitter" /></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/20/facebook-new.png" alt="facebook" /></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/20/instagram-new.png" alt="instagram" /></a>
+      </div>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#doacoes">Doações</a>
-    <a href="#adocao">Adoção</a>
-    <a href="#quem-somos">Quem somos</a>
-    <a href="#contato">Contato</a>
-  </nav>
-
-  <main>
-    <section id="doacoes">
-      <h2>Ajude um animal</h2>
-      <p>Faça uma doação e transforme vidas.</p>
-      <button class="btn">Doe Agora</button>
+  <main class="hero">
+    <section class="content">
+      <p class="subtitle">Você tem amor para dar?</p>
+      <h1 class="title">Ajude um<br>animal</h1>
+      <div class="buttons">
+        <button class="btn primary">Faça uma doação →</button>
+        <button class="btn secondary">Adote →</button>
+      </div>
+      <div class="info-card">
+        <span>Quem nós somos?</span>
+        <a href="#">Saiba mais →</a>
+      </div>
     </section>
-
-    <section id="adocao">
-      <h2>Adote</h2>
-      <p>Encontre um amigo fiel esperando por você.</p>
-      <button class="btn">Ver Animais para Adoção</button>
-    </section>
-
-    <section id="quem-somos">
-      <h2>Quem nós somos?</h2>
-      <p>Somos uma organização dedicada ao resgate e cuidado de animais abandonados.</p>
-      <button class="btn">Saiba mais</button>
-    </section>
-
-    <section id="contato">
-      <h2>Contato</h2>
-      <p>Entre em contato para saber como ajudar ou para tirar dúvidas.</p>
-      <button class="btn">Fale Conosco</button>
-    </section>
+    <div class="dog-image"></div>
   </main>
 
-  <footer>
-    &copy; 2025 Ajude um Animal - Todos os direitos reservados.
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
