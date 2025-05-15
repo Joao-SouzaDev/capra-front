@@ -4,12 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animais Disponíveis</title>
     <script src="../js/header.js"></script>
-    <title>Animais disponíveis</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <div id="header"></div>
+    <div class="header" id="header">
+    </div>
+    <nav class="filtros">
+        <h2>Filtros</h2>
+        <div class="filtro">
+            <label for="tipo">Tipo:</label>
+            <select id="tipo">
+                <option value="cachorro">Cachorro</option>
+                <option value="gato">Gato</option>
+                <option value="outro">Outro</option>
+            </select>
+        </div>
+        <div class="filtro">
+            <label for="idade">Idade:</label>
+            <select id="idade">
+                <option value="filhote">Filhote</option>
+                <option value="adulto">Adulto</option>
+                <option value="idoso">Idoso</option>
+            </select>
+        </div>
+        <button class="botao primario" id="filtrar">Filtrar</button>
+        <button class="botao secundario" id="limpar">Limpar</button>
+    </nav>
+    <div class="animais">
+        <h2>Animais Disponíveis</h2>
+        <ul class="lista-animais" id="#listaAnimais">
+            <li>
+                <img src="cachorro.jpg" alt="Cachorro" />
+                <h3>Cachorro</h3>
+                <p>Idade: 2 anos</p>
+                <button class="botao primario">Adotar</button>
+            </li>
+            <li>
+                <img src="gato.jpg" alt="Gato" />
+                <h3>Gato</h3>
+                <p>Idade: 1 ano</p>
+                <button class="botao primario">Adotar</button>
+            </li>
+        </ul>
+    </div>
+    <script src="../js/listagemAnimais.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
