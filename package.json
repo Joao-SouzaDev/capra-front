@@ -1,0 +1,23 @@
+{
+  "name": "capra-front",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joao-SouzaDev/capra-front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joao-SouzaDev/capra-front/issues"
+  },
+  "homepage": "https://github.com/Joao-SouzaDev/capra-front#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
