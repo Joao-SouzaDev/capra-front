@@ -1,0 +1,28 @@
+{
+    "animais": [
+        {
+            "id": 1,
+            "nome": "Branca",
+            "tipo": "Cachorro",
+            "idade": 5,
+            "img": "branca.jpeg",
+            "raca ": "Labrador"
+        },
+        {
+            "id": 2,
+            "nome": "Cleo",
+            "tipo": "Cachorro",
+            "img": "cleo.jpeg",
+            "idade": 3,
+            "raca ": "Siamês"
+        },
+        {
+            "id": 3,
+            "nome": "Gloria",
+            "img": "gloria.jpeg",
+            "tipo": "Cachorro",
+            "idade": 2,
+            "raca ": "Canário"
+        }
+    ]
+}
