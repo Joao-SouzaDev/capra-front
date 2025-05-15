@@ -6,7 +6,7 @@
 }
 
 /* Corpo da página: fonte, cor e imagem de fundo */
-body {
+body#home {
   font-family: 'Inter', sans-serif;
   color: #000;
   background-image: url('https://cdn.prod.website-files.com/602d151a812ce93ee387ebe5/628527e9dbb2dd3ed771b6cb_Cachorro%20latindo.jpg');

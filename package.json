@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "concurrently \"node index.js\" \"json-server --watch db.json --port 3000 --static db-public\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +19,8 @@
   "description": "",
   "dependencies": {
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
   }
 }
