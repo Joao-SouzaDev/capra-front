@@ -1,5 +1,5 @@
 async function carregaListaAnimais() {
-    animais = await fetch('http://localhost:3000/animais')
+    animais = await fetch('http://localhost:3000/animal')
         .then(response => response.json())
         .then(data => {
             return data;
@@ -18,3 +18,7 @@ function adicionaAnimaisNaLista(animais) {
         listaAnimais.appendChild(li);
     });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    carregaListaAnimais();
+});
