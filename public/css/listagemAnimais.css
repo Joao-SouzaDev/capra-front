@@ -1,0 +1,435 @@
+.conteiner-listagem {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.filtros {
+    min-width: 220px;
+    flex-shrink: 0;
+    padding: 10px;
+}
+
+.animais {
+    flex: 1;
+}
+
+.animais {
+    flex: 1;
+}
+
+.lista-animais {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    min-width: 220px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.filtros h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.filtro {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.filtro label {
+    display: block;
+    margin-bottom: 6px;
+    color: #555;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.filtro select {
+    width: 100%;
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background: #fafafd;
+    color: #333;
+}
+
+.botao {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+
+.botao.secundario {
+    background: #f2f2f6;
+    color: #333;
+}
+
+.botao.secundario:hover {
+    background: #e0e0e8;
+}
+
+.animal-card .animal-card * {
+    box-sizing: border-box;
+}
+
+.animal-card {
+    padding: 24px 20px;
+    margin: 20px auto;
+    background: var(--white, #ffffff);
+    border-radius: 16px;
+    border-style: solid;
+    border-color: var(--neutral-gray-4dfdfdf, #dfdfdf);
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    max-width: 400px;
+    justify-content: flex-start;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.animal-card:hover {
+    box-shadow: 0 4px 24px rgba(60, 60, 90, 0.14);
+}
+
+.animal-img {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 230px;
+    position: relative;
+    object-fit: cover;
+}
+
+.animal-card h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin: 10px 0 6px 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.animal-card p {
+    color: #666;
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 400;
+}
+
+.card-contents {
+    padding: 16px 16px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.pet-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.daisy {
+    color: var(--primary-900, #2e256f);
+    text-align: center;
+    font-family: var(--h6-font-family, "Inter-Bold", sans-serif);
+    font-size: var(--h6-font-size, 18px);
+    font-weight: var(--h6-font-weight, 700);
+    position: relative;
+}
+
+.like-main-cards {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.favorite-border {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    top: 0%;
+    overflow: visible;
+}
+
+.gender-breed {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.gender {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    position: relative;
+}
+
+.gender2 {
+    color: var(--black, #0c0c0c);
+    text-align: left;
+    font-family: var(--button-l-font-family, "Inter-Medium", sans-serif);
+    font-size: var(--button-l-font-size, 16px);
+    font-weight: var(--button-l-font-weight, 500);
+    position: relative;
+}
+
+.input {
+    background: var(--primary-100, #eae8f7);
+    border-radius: 8px;
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    min-width: 49px;
+    max-width: 55px;
+    position: relative;
+    overflow: hidden;
+}
+
+.female {
+    color: var(--primary-900, #2e256f);
+    text-align: center;
+    font-family: var(--caption-l-font-family, "Inter-Regular", sans-serif);
+    font-size: var(--caption-l-font-size, 12px);
+    font-weight: var(--caption-l-font-weight, 400);
+    position: relative;
+    flex: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.breed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    position: relative;
+}
+
+.breed2 {
+    color: var(--black, #0c0c0c);
+    text-align: left;
+    font-family: var(--button-l-font-family, "Inter-Medium", sans-serif);
+    font-size: var(--button-l-font-size, 16px);
+    font-weight: var(--button-l-font-weight, 500);
+    position: relative;
+}
+
+.input2 {
+    background: var(--primary-100, #eae8f7);
+    border-radius: 8px;
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    min-width: 50px;
+    max-width: 66px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mestzo {
+    color: var(--primary-900, #2e256f);
+    text-align: center;
+    font-family: var(--caption-l-font-family, "Inter-Regular", sans-serif);
+    font-size: var(--caption-l-font-size, 12px);
+    font-weight: var(--caption-l-font-weight, 400);
+    position: relative;
+    flex: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.age-size {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.age {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    position: relative;
+}
+
+.age2 {
+    color: var(--black, #0c0c0c);
+    text-align: left;
+    font-family: var(--button-l-font-family, "Inter-Medium", sans-serif);
+    font-size: var(--button-l-font-size, 16px);
+    font-weight: var(--button-l-font-weight, 500);
+    position: relative;
+}
+
+.input3 {
+    background: var(--primary-100, #eae8f7);
+    border-radius: 8px;
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    min-width: 64px;
+    max-width: 79px;
+    position: relative;
+    overflow: hidden;
+}
+
+._6-years {
+    color: var(--primary-900, #2e256f);
+    text-align: center;
+    font-family: var(--caption-l-font-family, "Inter-Regular", sans-serif);
+    font-size: var(--caption-l-font-size, 12px);
+    font-weight: var(--caption-l-font-weight, 400);
+    position: relative;
+    flex: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.size {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    position: relative;
+}
+
+.size2 {
+    color: var(--black, #0c0c0c);
+    text-align: left;
+    font-family: var(--button-l-font-family, "Inter-Medium", sans-serif);
+    font-size: var(--button-l-font-size, 16px);
+    font-weight: var(--button-l-font-weight, 500);
+    position: relative;
+}
+
+.input4 {
+    background: var(--primary-100, #eae8f7);
+    border-radius: 8px;
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    min-width: 54px;
+    max-width: 79px;
+    position: relative;
+    overflow: hidden;
+}
+
+.medium {
+    color: var(--primary-900, #2e256f);
+    text-align: center;
+    font-family: var(--caption-l-font-family, "Inter-Regular", sans-serif);
+    font-size: var(--caption-l-font-size, 12px);
+    font-weight: var(--caption-l-font-weight, 400);
+    position: relative;
+    flex: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.description {
+    max-width: 100%;
+    /* Garante que não ultrapasse o card */
+    word-wrap: break-word;
+    /* Quebra palavras longas */
+    white-space: normal;
+    /* Permite quebras de linha */
+    overflow-wrap: break-word;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+.button {
+    background: var(--white, #ffffff);
+    border-radius: 8px;
+    border-style: solid;
+    border-color: var(--primary, #675bc8);
+    border-width: 1px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 256px;
+    height: 48px;
+    position: relative;
+    overflow: hidden;
+}
+
+.text-button {
+    color: var(--primary, #675bc8);
+    text-align: left;
+    font-family: var(--button-l-font-family, "Inter-Medium", sans-serif);
+    font-size: var(--button-l-font-size, 16px);
+    font-weight: var(--button-l-font-weight, 500);
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}

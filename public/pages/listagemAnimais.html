@@ -7,38 +7,41 @@
     <title>Animais Disponíveis</title>
     <script src="../js/header.js"></script>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/listagemAnimais.css">
 </head>
 
 <body>
     <div class="header" id="header">
     </div>
-    <nav class="filtros">
-        <h2>Filtros</h2>
-        <div class="filtro">
-            <label for="tipo">Tipo:</label>
-            <select id="tipo">
-                <option value="cachorro">Cachorro</option>
-                <option value="gato">Gato</option>
-                <option value="outro">Outro</option>
-            </select>
+    <div class="conteiner-listagem">
+        <nav class="filtros">
+            <h2>Filtros</h2>
+            <div class="filtro">
+                <label for="tipo">Tipo:</label>
+                <select id="tipo">
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+            <div class="filtro">
+                <label for="idade">Idade:</label>
+                <select id="idade">
+                    <option value="filhote">Filhote</option>
+                    <option value="adulto">Adulto</option>
+                    <option value="idoso">Idoso</option>
+                </select>
+            </div>
+            <button class="botao primario" id="filtrar">Filtrar</button>
+            <button class="botao secundario" id="limpar">Limpar</button>
+        </nav>
+        <div class="animais">
+            <ul class="lista-animais" id="listaAnimais">
+                <!-- Os animais serão listados aqui -->
+            </ul>
         </div>
-        <div class="filtro">
-            <label for="idade">Idade:</label>
-            <select id="idade">
-                <option value="filhote">Filhote</option>
-                <option value="adulto">Adulto</option>
-                <option value="idoso">Idoso</option>
-            </select>
-        </div>
-        <button class="botao primario" id="filtrar">Filtrar</button>
-        <button class="botao secundario" id="limpar">Limpar</button>
-    </nav>
-    <div class="animais">
-        <h2>Animais Disponíveis</h2>
-        <ul class="lista-animais" id="listaAnimais">
-            <!-- Os animais serão listados aqui -->
-        </ul>
     </div>
+
     <script src="../js/listagemAnimais.js"></script>
 </body>
 
