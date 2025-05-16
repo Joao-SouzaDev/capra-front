@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Doações para Animais</title>
+  <link rel="stylesheet" href="../css/doacao.css" />
+</head>
+<body>
+  <header>
+    <h1>Doe para Nossos Peludinhos</h1>
+    <p>Ajude com doações para garantir conforto e cuidado.</p>
+  </header>
+
+  <main>
+    <section class="cards-container">
+      <div class="card" data-valor="50,00" data-desc="Esse valor que você está doando equivale a 30 fraldas para nossos peludinhos deficientes! Sua doação salva animais!">
+        <div class="card-title">Doação Única R$50,00</div>
+        <div class="card-desc">Esse valor que você está doando equivale a 30 fraldas para nossos peludinhos deficientes! Sua doação salva animais!</div>
+        <button class="btn-doar">DOAR</button>
+      </div>
+      <div class="card" data-valor="100,00" data-desc="Esse valor que você está doando equivale a 60 fraldas para nossos peludinhos deficientes! Sua doação salva animais!">
+        <div class="card-title">Doação Única R$100,00</div>
+        <div class="card-desc">Esse valor que você está doando equivale a 60 fraldas para nossos peludinhos deficientes! Sua doação salva animais!</div>
+        <button class="btn-doar">DOAR</button>
+      </div>
+      <div class="card" data-valor="200,00" data-desc="Esse valor que você está doando equivale a 120 fraldas para nossos peludinhos deficientes! Sua doação salva animais!">
+        <div class="card-title">Doação Única R$200,00</div>
+        <div class="card-desc">Esse valor que você está doando equivale a 120 fraldas para nossos peludinhos deficientes! Sua doação salva animais!</div>
+        <button class="btn-doar">DOAR</button>
+      </div>
+      <div class="card" data-valor="300,00" data-desc="Esse valor que você está doando equivale a 180 fraldas para nossos peludinhos deficientes! Sua doação salva animais!">
+        <div class="card-title">Doação Única R$300,00</div>
+        <div class="card-desc">Esse valor que você está doando equivale a 180 fraldas para nossos peludinhos deficientes! Sua doação salva animais!</div>
+        <button class="btn-doar">DOAR</button>
+      </div>
+      <div class="card" data-valor="400,00" data-desc="Esse valor que você está doando equivale a 240 fraldas para nossos peludinhos deficientes! Sua doação salva animais!">
+        <div class="card-title">Doação Única R$400,00</div>
+        <div class="card-desc">Esse valor que você está doando equivale a 240 fraldas para nossos peludinhos deficientes! Sua doação salva animais!</div>
+        <button class="btn-doar">DOAR</button>
+      </div>
+      <div class="card" data-valor="450,00" data-desc="Esse valor que você está doando equivale a 270 fraldas para nossos peludinhos deficientes! Sua doação salva animais!">
+        <div class="card-title">Doação Única R$450,00</div>
+        <div class="card-desc">Esse valor que você está doando equivale a 270 fraldas para nossos peludinhos deficientes! Sua doação salva animais!</div>
+        <button class="btn-doar">DOAR</button>
+      </div>
+      <div class="card" data-valor="500,00" data-desc="Esse valor que você está doando equivale a 300 fraldas para nossos peludinhos deficientes! Sua doação salva animais!">
+        <div class="card-title">Doação Única R$500,00</div>
+        <div class="card-desc">Esse valor que você está doando equivale a 300 fraldas para nossos peludinhos deficientes! Sua doação salva animais!</div>
+        <button class="btn-doar">DOAR</button>
+      </div>
+    </section>
+
+    <section class="pix-section">
+      <div class="pix-doacao">Ou faça uma doação livre via PIX</div>
+      <button class="btn-pix">PIX</button>
+    </section>
+  </main>
+
+  <!-- Modal Formulário -->
+  <div id="overlay"></div>
+  <div id="modalDoacao" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+    <h2 id="modalTitulo">Formulário de Doação</h2>
+    <form id="formDoacao">
+      <label for="nome">Nome Completo</label>
+      <input id="nome" name="nome" type="text" placeholder="Seu nome completo" required />
+
+      <label for="email">E-mail</label>
+      <input id="email" name="email" type="email" placeholder="seu@email.com" required />
+
+      <label for="telefone">Telefone</label>
+      <input id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" required />
+
+      <label for="valorDoacao">Valor da Doação (R$)</label>
+      <input id="valorDoacao" name="valorDoacao" type="text" readonly />
+
+      <div class="descricao-doacao" id="descDoacao"></div>
+
+      <button id="btnEnviar" type="submit">Enviar</button>
+      <button id="btnCancelar" type="button">Cancelar</button>
+    </form>
+  </div>
+<dialog id="pixDialog">
+  <h2>Doação via PIX</h2>
+  <div id="qrcode"></div>
+  <button id="fecharPix">Fechar</button>
+</dialog>
+
+
+  <script src="../js/doacao.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</body>
+</html>
