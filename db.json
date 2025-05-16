@@ -6,7 +6,8 @@
             "tipo": "Cachorro",
             "idade": 5,
             "img": "branca.jpeg",
-            "raca ": "Labrador",
+            "raca": "Labrador",
+            "tamanho": "mediano",
             "genero": "Fêmea",
             "descricao": "Branca é uma labradora muito brincalhona e adora correr no parque. Ela é super amigável e adora fazer novos amigos."
         },
@@ -15,8 +16,9 @@
             "nome": "Cleo",
             "tipo": "Cachorro",
             "img": "cleo.jpeg",
+            "tamanho": "mediano",
             "idade": 3,
-            "raca ": "Siamês",
+            "raca": "Siamês",
             "genero": "Fêmea",
             "descricao": "Cleo é uma cachorrinha muito curiosa e adora explorar novos lugares. Ela é muito carinhosa e gosta de ficar perto das pessoas."
         },
@@ -25,8 +27,9 @@
             "nome": "Gloria",
             "img": "gloria.jpeg",
             "tipo": "Cachorro",
+            "tamanho": "mediano",
             "idade": 2,
-            "raca ": "Canário",
+            "raca": "Canário",
             "genero": "Fêmea",
             "descricao": "Gloria é uma cachorrinha muito esperta e adora aprender novos truques. Ela é muito brincalhona e gosta de correr atrás de bolinhas."
         }

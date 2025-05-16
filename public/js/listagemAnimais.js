@@ -1,21 +1,21 @@
 async function carregaListaAnimais() {
-    animais = await fetch('http://localhost:3000/animal')
-        .then(response => response.json())
-        .then(data => {
-            return data;
-        })
-        .catch(error => console.error('Error loading animais:', error));
-    adicionaAnimaisNaLista(animais);
+  animais = await fetch('http://localhost:3000/animal')
+    .then(response => response.json())
+    .then(data => {
+      return data;
+    })
+    .catch(error => console.error('Error loading animais:', error));
+  adicionaAnimaisNaLista(animais);
 }
 
 function adicionaAnimaisNaLista(animais) {
-    const listaAnimais = document.getElementById('listaAnimais');
-    listaAnimais.innerHTML = ''; // Limpa a lista antes de adicionar novos itens
+  const listaAnimais = document.getElementById('listaAnimais');
+  listaAnimais.innerHTML = ''; // Limpa a lista antes de adicionar novos itens
 
-    animais.forEach(animal => {
-        const li = document.createElement('li');
-        li.innerHTML =
-            `
+  animais.forEach(animal => {
+    const li = document.createElement('li');
+    li.innerHTML =
+      `
 <div class="animal-card">
   <img src="/assets/${animal.img}" alt="Imagem de ${animal.nome}" class="animal-img" />
   <div class="card-contents">
@@ -67,10 +67,10 @@ function adicionaAnimaisNaLista(animais) {
 </div>
 
         `;
-        listaAnimais.appendChild(li);
-    });
+    listaAnimais.appendChild(li);
+  });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    carregaListaAnimais();
+  carregaListaAnimais();
 });
