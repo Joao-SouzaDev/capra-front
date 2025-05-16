@@ -17,9 +17,12 @@ app.get('/animais', (req, res) => {
 app.get('/assets', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'assets/'));
 });
-app.get('/404', (req,res) => {
-    res.sendFile(path.join(__dirname,'public', 'pages/404.html'));
+app.get('/404', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'pages/404.html'));
 })
+app.get('/doacao', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'pages/doacao.html'));
+});
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`);
 });
